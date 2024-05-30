@@ -1,0 +1,64 @@
+@import "colors";
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/contact2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >form{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 2rem;
+        //background-color: white;
+        width: 40%;
+        height: 80%;
+        justify-content: center;
+        >h2{
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: "Roboto";
+            margin: 2rem 0;
+
+        }
+        >textarea , >input {
+            padding: 1rem;
+            outline: none;
+            border: 1px solid rgb(202,202,202);
+            margin: 0.5rem;
+            width: 50%;
+            border-radius: 5px;
+            
+        }
+        >button{
+            background-color: $red;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            width: 50%;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor:pointer;
+            &:hover {
+                background-color: $reddark;
+            }
+            
+        }
+    }
+}
+@media screen and (Max-Width : 600px) {
+    .contact{
+        height: 70vh;
+        >form {
+            height: 100%;
+            width: 100%;
+        }
+        
+    }
+    
+}
